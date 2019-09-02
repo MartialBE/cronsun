@@ -114,6 +114,8 @@ type SessionConfig struct {
 type MailConf struct {
 	Enable bool
 	To     []string
+	// 如果配置则按 DingAPI 方式发送， 发送的优先级 DingAPI > HttpAPI > Mail
+	DingAPI string
 	// 如果配置，则按 http api 方式发送，否则按 smtp 方式发送
 	HttpAPI string
 	// 如果此时间段内没有邮件发送，则关闭 SMTP 连接，单位/秒

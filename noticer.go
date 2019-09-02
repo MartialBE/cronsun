@@ -6,13 +6,16 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"regexp"
 	"time"
 
 	client "github.com/coreos/etcd/clientv3"
 	"github.com/go-gomail/gomail"
 
+	"github.com/royeo/dingrobot"
 	"github.com/xiao5-neradigm/cronsun/conf"
 	"github.com/xiao5-neradigm/cronsun/log"
+	"github.com/xiao5-neradigm/cronsun/utils"
 )
 
 type Noticer interface {
@@ -141,6 +144,62 @@ func (h *HttpAPI) Send(msg *Message) {
 	}
 	log.Warnf("http api send msg[%+v] err: %s", msg, string(data))
 	return
+}
+
+type DingAPI struct{}
+
+type DingMessage struct {
+	msgType  string
+	markdown struct {
+		title string
+		text  string
+	}
+	at struct {
+		atMobiles []string
+		isAtAll   bool
+	}
+}
+
+type dingResponse struct {
+	Errcode int
+	Errmsg  string
+}
+
+func (h *DingAPI) Serve() {}
+
+func (h *DingAPI) Send(msg *Message) {
+	dingMSG := new(DingMessage)
+	dingMSG.setAtArray(msg.To)
+	dingMSG.setMarkdown(msg.Subject, msg.Body)
+
+	robot := dingrobot.NewRobot(conf.Config.Mail.DingAPI)
+	err := robot.SendMarkdown(dingMSG.markdown.title, dingMSG.markdown.text, dingMSG.at.atMobiles, dingMSG.at.isAtAll)
+	if err != nil {
+		log.Warnf("ding api send failed msg[%+v] err: %s", msg, err.Error())
+		return
+	}
+	return
+}
+
+func (dingMSG *DingMessage) setAtArray(to []string) {
+	for i, value := range to {
+		if value != "de" {
+			continue
+		}
+		to = append(to[:i], to[i+1:]...)
+	}
+	dingMSG.at.atMobiles = to
+	dingMSG.at.isAtAll = false
+}
+
+func (dingMSG *DingMessage) setMarkdown(subject, body string) {
+	dingMSG.msgType = "markdown"
+	job := utils.Isset(regexp.MustCompile(`(?:job\[)(.*?)(?:\])`).FindStringSubmatch(subject), 1)
+	node := utils.Isset(regexp.MustCompile(`(?:node\[)(.*?)(?:\])`).FindStringSubmatch(subject), 1)
+	time := utils.Isset(regexp.MustCompile(`(?:time\[)(.*?)(?:\])`).FindStringSubmatch(subject), 1)
+
+	dingMSG.markdown.title = job + "出错了"
+	dingMSG.markdown.text = "### " + job + "出错了" + utils.Implode(" @", dingMSG.at.atMobiles) + "\n#### 任务名称：" + job + "\n#### 执行节点：" + node + "\n#### 错误时间：" + time + "\n#### 错误详情：\n```\n" + subject + "\n" + body + "\n```\n"
 }
 
 func StartNoticer(n Noticer) {

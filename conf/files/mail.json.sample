@@ -1,6 +1,7 @@
 {
     "Enable": false,
-    "To": ["na@nb.com"],
+    "To": ["de"],
+    "#DingAPI": "如有此字段，则按 钉钉群机器人 api 方式发送 发送的优先级 DingAPI > HttpAPI > Mail",
     "#HttpAPI": "如有此字段，则按 http api 方式发送",
     "#Keepalive": "如果此时间段内没有邮件发送，则关闭 SMTP 连接，单位/秒",
     "Keepalive": 60,

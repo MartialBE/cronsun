@@ -59,7 +59,9 @@ func main() {
 	if conf.Config.Mail.Enable {
 		var noticer cronsun.Noticer
 
-		if len(conf.Config.Mail.HttpAPI) > 0 {
+		if len(conf.Config.Mail.DingAPI) > 0 {
+			noticer = &cronsun.DingAPI{}
+		} else if len(conf.Config.Mail.HttpAPI) > 0 {
 			noticer = &cronsun.HttpAPI{}
 		} else {
 			mailer, err := cronsun.NewMail(30 * time.Second)

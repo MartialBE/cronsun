@@ -38,6 +38,7 @@ require (
 	github.com/prometheus/common v0.0.0-20180801064454-c7de2306084e // indirect
 	github.com/prometheus/procfs v0.0.0-20180725123919-05ee40e3a273 // indirect
 	github.com/rogpeppe/fastuuid v0.0.0-20150106093220-6724a57986af
+	github.com/royeo/dingrobot v1.0.0
 	github.com/sirupsen/logrus v1.0.6 // indirect
 	github.com/smartystreets/assertions v0.0.0-20180820201707-7c9eb446e3cf // indirect
 	github.com/smartystreets/goconvey v0.0.0-20180222194500-ef6db91d284a

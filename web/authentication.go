@@ -9,10 +9,10 @@ import (
 
 	"strings"
 
-	"github.com/shunfei/cronsun"
-	"github.com/shunfei/cronsun/conf"
-	"github.com/shunfei/cronsun/log"
-	"github.com/shunfei/cronsun/utils"
+	"github.com/xiao5-neradigm/cronsun"
+	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/xiao5-neradigm/cronsun/log"
+	"github.com/xiao5-neradigm/cronsun/utils"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

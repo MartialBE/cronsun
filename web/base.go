@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shunfei/cronsun"
-	"github.com/shunfei/cronsun/conf"
-	"github.com/shunfei/cronsun/log"
-	"github.com/shunfei/cronsun/web/session"
+	"github.com/xiao5-neradigm/cronsun"
+	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/xiao5-neradigm/cronsun/log"
+	"github.com/xiao5-neradigm/cronsun/web/session"
 )
 
 var sessManager session.SessionManager

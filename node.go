@@ -12,8 +12,8 @@ import (
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/shunfei/cronsun/conf"
-	"github.com/shunfei/cronsun/log"
+	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/xiao5-neradigm/cronsun/log"
 )
 
 const (

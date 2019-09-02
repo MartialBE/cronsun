@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/shunfei/cronsun/conf"
-	"github.com/shunfei/cronsun/db"
+	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/xiao5-neradigm/cronsun/db"
 )
 
 var (

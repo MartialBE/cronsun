@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/shunfei/cronsun"
-	subcmd "github.com/shunfei/cronsun/bin/csctl/cmd"
+	"github.com/xiao5-neradigm/cronsun"
+	subcmd "github.com/xiao5-neradigm/cronsun/bin/csctl/cmd"
 )
 
 var confFile string
@@ -25,7 +25,7 @@ var rootCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.PersistentFlags().StringVarP(&confFile, "conf", "c", "conf/files/base.json", "base.json file path.")
+	rootCmd.PersistentFlags().StringVarP(&confFile, "conf", "c", "conf/base.json", "base.json file path.")
 	rootCmd.AddCommand(subcmd.BackupCmd, subcmd.RestoreCmd, subcmd.UpgradeCmd, subcmd.NodeCmd)
 }
 

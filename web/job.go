@@ -10,9 +10,9 @@ import (
 	"github.com/coreos/etcd/clientv3"
 	"github.com/gorilla/mux"
 
-	"github.com/shunfei/cronsun"
-	"github.com/shunfei/cronsun/conf"
-	"github.com/shunfei/cronsun/log"
+	"github.com/xiao5-neradigm/cronsun"
+	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/xiao5-neradigm/cronsun/log"
 )
 
 type Job struct{}

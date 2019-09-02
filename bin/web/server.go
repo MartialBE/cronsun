@@ -10,16 +10,16 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/shunfei/cronsun"
-	"github.com/shunfei/cronsun/conf"
-	"github.com/shunfei/cronsun/event"
-	"github.com/shunfei/cronsun/log"
-	"github.com/shunfei/cronsun/web"
+	"github.com/xiao5-neradigm/cronsun"
+	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/xiao5-neradigm/cronsun/event"
+	"github.com/xiao5-neradigm/cronsun/log"
+	"github.com/xiao5-neradigm/cronsun/web"
 )
 
 var (
 	level    = flag.Int("l", 0, "log level, -1:debug, 0:info, 1:warn, 2:error")
-	confFile = flag.String("conf", "conf/files/base.json", "config file path")
+	confFile = flag.String("conf", "conf/base.json", "config file path")
 	network  = flag.String("network", "", "network protocol of listen address: ipv4/ipv6, or empty use both")
 )
 

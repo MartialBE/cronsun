@@ -64,15 +64,15 @@ We encourage you to try it, it's easy to use, see how it works for you. We belie
 
 ### Setup / installation
 
-Install from binary [latest release](https://github.com/shunfei/cronsun/releases/latest)
+Install from binary [latest release](https://github.com/xiao5-neradigm/cronsun/releases/latest)
 
 Or build from source, require `go >= 1.11+`.
 > NOTE: The branch `master` is not in stable, using Cronsun for production please checkout corresponding tags.
 
 ```
 export GO111MODULE=on
-go get -u github.com/shunfei/cronsun
-cd $GOPATH/src/github.com/shunfei/cronsun
+go get -u github.com/xiao5-neradigm/cronsun
+cd $GOPATH/src/github.com/xiao5-neradigm/cronsun
 go mod vendor
 sh build.sh
 ```

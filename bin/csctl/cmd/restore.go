@@ -10,8 +10,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/shunfei/cronsun"
-	"github.com/shunfei/cronsun/conf"
+	"github.com/xiao5-neradigm/cronsun"
+	"github.com/xiao5-neradigm/cronsun/conf"
 )
 
 var restoreFile string

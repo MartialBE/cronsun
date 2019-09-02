@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/shunfei/cronsun"
+	"github.com/xiao5-neradigm/cronsun"
 )
 
 var (

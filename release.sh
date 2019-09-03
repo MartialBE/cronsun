@@ -1,6 +1,6 @@
 #!/bin/sh
 
-version=v0.1
+version=v0.3.5-1
 if [[ $# -gt 0 ]]; then
 	version="$1"
 fi

@@ -1,4 +1,4 @@
-# cronsun [![Build Status](https://travis-ci.org/xiao5-neradigm/cronsun.svg?branch=master)](https://travis-ci.org/xiao5-neradigm/cronsun)  [![Build Status](https://img.shields.io/badge/releases-v0.3.5--1-green.svg)](https://github.com/xiao5-neradigm/cronsun/releases)
+# cronsun [![Build Status](https://travis-ci.org/MartialBE/cronsun.svg?branch=master)](https://travis-ci.org/MartialBE/cronsun)  [![Build Status](https://img.shields.io/badge/releases-v0.3.5--1-green.svg)](https://github.com/MartialBE/cronsun/releases)
 
 `cronsun` 是一个分布式任务系统，单个结点和 `*nix` 机器上的 `crontab` 近似。支持界面管理机器上的任务，支持任务失败邮件提醒，安装简单，使用方便，是替换 `crontab` 一个不错的选择。
 

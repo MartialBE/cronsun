@@ -1,4 +1,4 @@
-# cronsun [![Build Status](https://travis-ci.org/xiao5-neradigm/cronsun.svg?branch=master)](https://travis-ci.org/xiao5-neradigm/cronsun)  [![Build Status](https://img.shields.io/badge/releases-v0.3.5--1-green.svg)](https://github.com/xiao5-neradigm/cronsun/releases)
+# cronsun [![Build Status](https://travis-ci.org/MartialBE/cronsun.svg?branch=master)](https://travis-ci.org/MartialBE/cronsun)  [![Build Status](https://img.shields.io/badge/releases-v0.3.5--1-green.svg)](https://github.com/MartialBE/cronsun/releases)
 
 `cronsun` is a distributed cron-style job system. It's similar with `crontab` on stand-alone `*nix`.
 

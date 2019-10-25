@@ -7,12 +7,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/coreos/etcd/clientv3"
+	"go.etcd.io/etcd/clientv3"
 	"github.com/gorilla/mux"
 
-	"github.com/xiao5-neradigm/cronsun"
-	"github.com/xiao5-neradigm/cronsun/conf"
-	"github.com/xiao5-neradigm/cronsun/log"
+	"github.com/MartialBE/cronsun"
+	"github.com/MartialBE/cronsun/conf"
+	"github.com/MartialBE/cronsun/log"
 )
 
 type Job struct{}

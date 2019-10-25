@@ -9,15 +9,15 @@ import (
 	"strings"
 	"time"
 
-	client "github.com/coreos/etcd/clientv3"
+	client "go.etcd.io/etcd/clientv3"
 	"github.com/fsnotify/fsnotify"
 	"github.com/go-gomail/gomail"
 	"github.com/gofrs/uuid"
 
-	"github.com/xiao5-neradigm/cronsun/db"
-	"github.com/xiao5-neradigm/cronsun/event"
-	"github.com/xiao5-neradigm/cronsun/log"
-	"github.com/xiao5-neradigm/cronsun/utils"
+	"github.com/MartialBE/cronsun/db"
+	"github.com/MartialBE/cronsun/event"
+	"github.com/MartialBE/cronsun/log"
+	"github.com/MartialBE/cronsun/utils"
 )
 
 var (

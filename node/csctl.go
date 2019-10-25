@@ -3,8 +3,8 @@ package node
 import (
 	"encoding/json"
 
-	"github.com/xiao5-neradigm/cronsun"
-	"github.com/xiao5-neradigm/cronsun/log"
+	"github.com/MartialBE/cronsun"
+	"github.com/MartialBE/cronsun/log"
 )
 
 func (n *Node) executCsctlCmd(key, value []byte) error {

@@ -1,6 +1,6 @@
 package web
 
-import "github.com/xiao5-neradigm/cronsun/conf"
+import "github.com/MartialBE/cronsun/conf"
 
 type Configuration struct{}
 

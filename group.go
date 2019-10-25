@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	client "github.com/coreos/etcd/clientv3"
+	client "go.etcd.io/etcd/clientv3"
 
-	"github.com/xiao5-neradigm/cronsun/conf"
-	"github.com/xiao5-neradigm/cronsun/log"
+	"github.com/MartialBE/cronsun/conf"
+	"github.com/MartialBE/cronsun/log"
 )
 
 // 结点类型分组

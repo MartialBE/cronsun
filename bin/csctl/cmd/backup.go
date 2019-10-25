@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
+	"go.etcd.io/etcd/clientv3"
 	"github.com/spf13/cobra"
 
-	"github.com/xiao5-neradigm/cronsun"
-	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/MartialBE/cronsun"
+	"github.com/MartialBE/cronsun/conf"
 )
 
 var (

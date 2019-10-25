@@ -6,13 +6,13 @@ import (
 	"net/http"
 	"strings"
 
-	v3 "github.com/coreos/etcd/clientv3"
+	v3 "go.etcd.io/etcd/clientv3"
 	"github.com/gorilla/mux"
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/xiao5-neradigm/cronsun"
-	"github.com/xiao5-neradigm/cronsun/conf"
-	"github.com/xiao5-neradigm/cronsun/log"
+	"github.com/MartialBE/cronsun"
+	"github.com/MartialBE/cronsun/conf"
+	"github.com/MartialBE/cronsun/log"
 )
 
 type Node struct{}

@@ -11,12 +11,12 @@ import (
 	"syscall"
 	"time"
 
-	client "github.com/coreos/etcd/clientv3"
-	"github.com/xiao5-neradigm/cronsun"
-	"github.com/xiao5-neradigm/cronsun/conf"
-	"github.com/xiao5-neradigm/cronsun/log"
-	"github.com/xiao5-neradigm/cronsun/node/cron"
-	"github.com/xiao5-neradigm/cronsun/utils"
+	client "go.etcd.io/etcd/clientv3"
+	"github.com/MartialBE/cronsun"
+	"github.com/MartialBE/cronsun/conf"
+	"github.com/MartialBE/cronsun/log"
+	"github.com/MartialBE/cronsun/node/cron"
+	"github.com/MartialBE/cronsun/utils"
 )
 
 // Node 执行 cron 命令服务的结构体

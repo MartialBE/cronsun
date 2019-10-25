@@ -3,10 +3,10 @@ package web
 import (
 	"time"
 
-	v3 "github.com/coreos/etcd/clientv3"
+	v3 "go.etcd.io/etcd/clientv3"
 
-	"github.com/xiao5-neradigm/cronsun"
-	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/MartialBE/cronsun"
+	"github.com/MartialBE/cronsun/conf"
 )
 
 type Info struct{}

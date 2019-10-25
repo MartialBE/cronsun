@@ -7,7 +7,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/xiao5-neradigm/cronsun"
+	"github.com/MartialBE/cronsun"
 )
 
 func GetVersion(ctx *Context) {

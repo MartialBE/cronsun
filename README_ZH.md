@@ -20,7 +20,7 @@
 - 任务日志查看
 - 任务失败邮件告警（也支持自定义http告警接口）
 - 用户验证与授权 (默认账号密码: admin@admin.com / admin)
-- [可靠性说明](https://github.com/xiao5-neradigm/cronsun/wiki/%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AF%B4%E6%98%8E)
+- [可靠性说明](https://github.com/MartialBE/cronsun/wiki/%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AF%B4%E6%98%8E)
 
 
 ## 架构
@@ -66,13 +66,13 @@
 
 ### 安装
 
-直接下载执行文件 [latest release](https://github.com/xiao5-neradigm/cronsun/releases/latest)。
+直接下载执行文件 [latest release](https://github.com/MartialBE/cronsun/releases/latest)。
 
 如果你熟悉 `Go`，也可以从源码编译, 要求 `go >= 1.11+`
 
 ```
-go get -u github.com/xiao5-neradigm/cronsun
-cd $GOPATH/src/github.com/xiao5-neradigm/cronsun
+go get -u github.com/MartialBE/cronsun
+cd $GOPATH/src/github.com/MartialBE/cronsun
 go mod vendor
 # 如果 go mod vendor 下载失败，请尝试 https://goproxy.io
 sh build.sh

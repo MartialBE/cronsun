@@ -10,11 +10,11 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/xiao5-neradigm/cronsun"
-	"github.com/xiao5-neradigm/cronsun/conf"
-	"github.com/xiao5-neradigm/cronsun/event"
-	"github.com/xiao5-neradigm/cronsun/log"
-	"github.com/xiao5-neradigm/cronsun/web"
+	"github.com/MartialBE/cronsun"
+	"github.com/MartialBE/cronsun/conf"
+	"github.com/MartialBE/cronsun/event"
+	"github.com/MartialBE/cronsun/log"
+	"github.com/MartialBE/cronsun/web"
 )
 
 var (

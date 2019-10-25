@@ -1,9 +1,9 @@
 package cronsun
 
 import (
-	client "github.com/coreos/etcd/clientv3"
+	client "go.etcd.io/etcd/clientv3"
 
-	"github.com/xiao5-neradigm/cronsun/conf"
+	"github.com/MartialBE/cronsun/conf"
 )
 
 // 马上执行 job 任务

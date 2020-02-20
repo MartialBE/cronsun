@@ -19,7 +19,7 @@ require (
 	go.etcd.io/etcd v3.3.17+incompatible
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.2.0 // indirect
-	go.uber.org/zap v1.11.0
+	go.uber.org/zap v1.14.0
 	golang.org/x/net v0.0.0-20191021144547-ec77196f6094 // indirect
 	google.golang.org/grpc v1.24.0 // indirect
 	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22

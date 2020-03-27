@@ -15,7 +15,7 @@ require (
 	github.com/gorilla/mux v1.7.3
 	github.com/rogpeppe/fastuuid v1.2.0
 	github.com/royeo/dingrobot v1.0.0
-	github.com/spf13/cobra v0.0.5
+	github.com/spf13/cobra v0.0.7
 	go.etcd.io/etcd v3.3.17+incompatible
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.2.0 // indirect

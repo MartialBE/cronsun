@@ -12,7 +12,7 @@ require (
 	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/google/uuid v1.1.1 // indirect
-	github.com/gorilla/mux v1.7.3
+	github.com/gorilla/mux v1.8.0
 	github.com/rogpeppe/fastuuid v1.2.0
 	github.com/royeo/dingrobot v1.0.0
 	github.com/spf13/cobra v0.0.5

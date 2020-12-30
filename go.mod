@@ -9,7 +9,7 @@ require (
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/fsnotify/fsnotify v1.4.7
 	github.com/go-gomail/gomail v0.0.0-20160411212932-81ebce5c23df
-	github.com/gofrs/uuid v3.2.0+incompatible
+	github.com/gofrs/uuid v3.4.0+incompatible
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/google/uuid v1.1.1 // indirect
 	github.com/gorilla/mux v1.7.3
